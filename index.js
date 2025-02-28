@@ -14,6 +14,7 @@ menuicon.addEventListener("click",function(){
 closenav.addEventListener("click",function(){
     sidenav.style.right="-50%"
 })
+
 // FAQ
 document.querySelectorAll('.faq-toggle').forEach(button => {
     button.addEventListener('click', () => {
