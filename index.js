@@ -14,3 +14,13 @@ menuicon.addEventListener("click",function(){
 closenav.addEventListener("click",function(){
     sidenav.style.right="-50%"
 })
+// FAQ
+document.querySelectorAll('.faq-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const symbol = button.querySelector('span:last-child');
+        
+        answer.classList.toggle('hidden');
+        symbol.textContent = answer.classList.contains('hidden') ? '+' : '-';
+    });
+});
