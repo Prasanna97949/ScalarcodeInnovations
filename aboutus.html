@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scalar Code Innovations</title>
+    <link rel="icon" type="image/x-icon"  href="./images/doc-logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .fade-in { animation: fadeIn 1s ease-in-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white" >
+    <!-- Navbar ms -->
+    <nav class="hidden p-2 bg-[#949494] md:flex justify-between items-center shadow-xl z-10 sticky top-0">
+        <div class="flex justify-center items-center gap-2">
+            <img class="h-10 rounded-md " src="./images/logo.png" alt="logo">
+            <h1 class="text-2xl text-black font-bold"><span class="text-[#F16C27]" >SC</span>ALARCODE</h1>
+        </div>
+        <div>
+            <ul class="flex justify-center items-center pt-1 gap-8 ">
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./index.html">Home</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./aboutus.html">About Us</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./catlog.html">Services</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./catlog.html">Our Projects</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./catlog.html">Blogs</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./contactus.html">Contact Us</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./catlog.html">Support</a></li>
+            </ul>
+        </div>
+        <div></div>
+     </nav>
+     <!-- Navbar ss -->
+     <nav class="md:hidden p-2 bg-[#949494] flex justify-between shadow-xl z-10 sticky top-0">
+        <div class="flex justify-center items-center gap-2">
+            <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              
+        </div>
+        <div class="flex justify-center items-center gap-2">
+            <img class="h-10 rounded-md " src="./images/logo.png" alt="logo">
+            <h1 class="text-2xl text-black font-bold"><span class="text-[#F16C27]" >SC</span>ALARCODE</h1>
+        </div>
+        <div></div>
+     </nav>
+     <!-- side navbar -->
+     <Section id="sidenav" class="bg-[#949494] fixed z-20 top-0 transition-all duration-1000 " style="width: 50%; height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="inline text-black cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col items-center gap-8 text-gray-600">
+            <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./index.html">Home</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./aboutus.html">About Us</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./catlog.html">Services</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./catlog.html">Our Project</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./catlog.html">Blogs</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./contactus.html">Contact Us</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./catlog.html">Support</a></li>
+        </ul>
+     </Section>
+     <!-- About Us -->
+<!-- Hero Section -->
+<section class="bg-[#36404C] text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+        <h1 class="text-5xl font-bold mb-2">About ScalarCode Innovations</h1>
+        <p class="text-xl mb-8">Innovating the Future of Digital Solutions</p>
+    </div>
+</section>
+
+<!-- Mission Section -->
+<section class="py-16">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-[#F16C27] mb-6">Our Mission</h2>
+        <p class="text-lg text-white leading-relaxed">
+            At ScalarCode Innovations, our mission is to provide top-tier digital solutions that drive business success. We are committed to transforming ideas into reality through innovative design, robust development, and strategic implementation. Our goal is to empower businesses with the tools they need to excel in an ever-evolving digital world.
+        </p>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class=" py-16">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-[#F16C27] mb-12">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service Item -->
+            <div data-aos="fade-up"
+            data-aos-duration="3000" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-4">UI/UX Design Services</h3>
+                <p class="text-gray-700">
+                    Crafting intuitive and engaging user interfaces that enhance user experience and foster customer loyalty.
+                </p>
+            </div>
+            <!-- Service Item -->
+            <div data-aos="fade-up"
+            data-aos-duration="3000" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-4">Custom Website Design</h3>
+                <p class="text-gray-700">
+                    Developing bespoke websites that reflect your brand identity and meet your specific business objectives.
+                </p>
+            </div>
+            <!-- Service Item -->
+            <div data-aos="fade-up"
+            data-aos-duration="3000" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-4">E-Commerce Solutions</h3>
+                <p class="text-gray-700">
+                    Building scalable and secure e-commerce platforms that drive sales and provide seamless shopping experiences.
+                </p>
+            </div>
+            <!-- Service Item -->
+            <div data-aos="fade-up"
+            data-aos-duration="3000" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-4">Website Maintenance and Support</h3>
+                <p class="text-gray-700">
+                    Offering comprehensive maintenance services to ensure your website remains up-to-date, secure, and performing optimally.
+                </p>
+            </div>
+            <!-- Service Item -->
+            <div data-aos="fade-up"
+            data-aos-duration="3000" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-4">Content Management Systems (CMS)</h3>
+                <p class="text-gray-700">
+                    Implementing user-friendly CMS platforms that allow for effortless content updates and management.
+                </p>
+            </div>
+            <!-- Service Item -->
+            <div data-aos="fade-up"
+            data-aos-duration="3000" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-4">API Integration</h3>
+                <p class="text-gray-700">
+                    Integrating third-party APIs to enhance functionality and streamline your business processes.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Approach Section -->
+<section class=" py-16">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-[#F16C27] mb-12">Our Approach</h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Step 1 -->
+            <div class="bg-white p-6 shadow-lg rounded-lg text-center transform transition duration-300 hover:scale-105">
+                <div class="text-4xl text-blue-500 font-bold mb-3">1</div>
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">Understanding Your Needs</h3>
+                <p class="text-gray-600">We start with in-depth discussions to grasp your business goals, target audience, and expectations.</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-white p-6 shadow-lg rounded-lg text-center transform transition duration-300 hover:scale-105">
+                <div class="text-4xl text-orange-500 font-bold mb-3">2</div>
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">Crafting a Unique Solution</h3>
+                <p class="text-gray-600">Our team designs and develops custom solutions tailored to your needs with a user-friendly approach.</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-white p-6 shadow-lg rounded-lg text-center transform transition duration-300 hover:scale-105">
+                <div class="text-4xl text-teal-500 font-bold mb-3">3</div>
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">Testing & Optimization</h3>
+                <p class="text-gray-600">We rigorously test your website to ensure performance, security, and flawless functionality.</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="bg-white p-6 shadow-lg rounded-lg text-center transform transition duration-300 hover:scale-105">
+                <div class="text-4xl text-red-500 font-bold mb-3">4</div>
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">Deployment & Launch</h3>
+                <p class="text-gray-600">Once tested, we deploy your website on a reliable server for a seamless experience.</p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="bg-white p-6 shadow-lg rounded-lg text-center transform transition duration-300 hover:scale-105">
+                <div class="text-4xl text-purple-500 font-bold mb-3">5</div>
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">Ongoing Support & Growth</h3>
+                <p class="text-gray-600">We provide continuous maintenance and support, ensuring your site evolves with your business.</p>
+            </div>
+        </div>
+    </div>
+</section>
+            <!-- Contact Section -->
+    <section id="contact" class="py-16 px-8 bg-[#949494] text-black text-center">
+        <h2 class="text-4xl font-bold">Get in Touch</h2>
+        <p class="mt-4">Let's bring your ideas to life. Reach out to us today!</p>
+        <a href="mailto:contact@scalarcode.com" class="mt-6 inline-block bg-[#F16C27] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0FB2E1] transition">Contact Us</a>
+    </section>
+    <hr>    
+     <!-- footer -->
+    <section id="contact" class="py-6 px-8 bg-[#949494] text-black text-center">
+        <div class=" flex justify-around items-center flex-wrap gap-10" >
+            <div class="flex flex-col justify-center items-center gap-4">
+                <img class="h-28 w-28 "  src="./images/doc-logo.png" alt="logo">
+                <h2>Code your Success with Us <br> Transforming Ideas into Reality</h2>
+            </div>
+            <!-- quick links -->
+            <div class="text-left">
+                <h2 class="font-bold">Quick Links</h2>
+                <h2 class="hover:text-white cursor-pointer">Home</h2>
+                <h2 class="hover:text-white cursor-pointer">About Us</h2>
+                <h2 class="hover:text-white cursor-pointer">Services</h2>
+                <h2 class="hover:text-white cursor-pointer">Our Projects</h2>
+                <h2 class="hover:text-white cursor-pointer">Blogs</h2>
+                <h2 class="hover:text-white cursor-pointer">Contact Us</h2>
+                <h2 class="hover:text-white cursor-pointer">Support</h2>
+            </div>
+            <!-- contact details -->
+            <div class="text-left">
+                <h2 class="font-bold">Contact Details</h2>
+                <div class="flex gap-2 items-center mt-1 " >
+                    <i class="fa-solid fa-phone fa-sm" style="color: #000000;"></i>
+                    <h2>+91 9095796142</h2>
+                </div>
+              <div class="flex gap-2 items-center mt-1 " >
+                  <i class="fa-solid fa-phone fa-sm" style="color: #000000;"></i>
+                  <h2>+91 9159088617</h2>
+              </div>
+              <div class="flex gap-2 items-center mt-1 " >
+                  <h2><i class="fa-solid fa-location-dot fa-sm" style="color: #000000;"></i> MIG-280, Tamil University,<br>Sindhamani,<br>Medical College Road,<br>Thanjavur-613 010.</h2>
+               </div>
+               <div class="flex gap-2 items-center mt-1 " >
+                <i class="fa-solid fa-envelope fa-sm" style="color: #000000;"></i>
+                   <h2>scalarcodeinnovations@gmail.com</h2>
+               </div>
+            </div>
+            <!-- follow us -->
+             <div class="flex flex-col gap-8">
+                <h2 class="font-bold">Follow Us On</h2>
+                <div class="flex gap-6">
+                    <i class="fa-brands fa-youtube fa-lg" style="color: #000205;"></i>
+                    <i class="fa-brands fa-instagram fa-lg" style="color: #1e3050;"></i>
+                    <i class="fa-brands fa-linkedin fa-lg" style="color: #000000;"></i>
+                    <i class="fa-brands fa-whatsapp fa-lg" style="color: #000000;"></i>
+                </div>
+             </div>
+        </div>
+        <hr class="mt-3">
+        <h2 class="mt-2">© 2025 ScalarCode Innovations | All Rights Reserved</h2>
+    </section>
+    <script src="./aboutus.js" ></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
