@@ -11,16 +11,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
-        .fade-in { animation: fadeIn 1s ease-in-out; }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        /* Background Animation */
+        @keyframes move {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .animated-bg div {
+            animation: move 6s infinite ease-in-out alternate;
         }
     </style>
 </head>
 <body class="bg-gray-900 text-white" >
     <!-- Navbar ms -->
-    <nav class="hidden p-2 bg-[#949494] md:flex justify-between items-center shadow-xl z-10 sticky top-0">
+    <nav class="hidden p-2 bg-[#949494] md:flex justify-between items-center shadow-xl z-20 sticky top-0">
         <div class="flex justify-center items-center gap-2">
             <img class="h-10 rounded-md " src="./images/logo.png" alt="logo">
             <h1 class="text-2xl text-black font-bold"><span class="text-[#F16C27]" >SC</span>ALARCODE</h1>
@@ -39,7 +43,7 @@
         <div></div>
      </nav>
      <!-- Navbar ss -->
-     <nav class="md:hidden p-2 bg-[#949494] flex justify-between shadow-xl z-10 sticky top-0">
+     <nav class="md:hidden p-2 bg-[#949494] flex justify-between shadow-xl z-20 sticky top-0">
         <div class="flex justify-center items-center gap-2">
             <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -67,126 +71,108 @@
                 <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./support.html">Support</a></li>
         </ul>
      </Section>
-     <!-- About Us -->
-<!-- Hero Section -->
-<section class="bg-[#36404C] text-white py-20">
-    <div class="container mx-auto px-6 text-center">
-        <h1 class="text-5xl font-bold mb-2">About ScalarCode Innovations</h1>
-        <p class="text-xl mb-8">Innovating the Future of Digital Solutions</p>
-    </div>
-</section>
-
-<!-- Mission Section -->
-<section class="py-16">
-    <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-bold text-[#F16C27] mb-6">Our Mission</h2>
-        <p class="text-lg text-white leading-relaxed">
-            At ScalarCode Innovations, our mission is to provide top-tier digital solutions that drive business success. We are committed to transforming ideas into reality through innovative design, robust development, and strategic implementation. Our goal is to empower businesses with the tools they need to excel in an ever-evolving digital world.
-        </p>
-    </div>
-</section>
-
-<!-- Services Section -->
-<section class=" py-16">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center text-[#F16C27] mb-12">Our Services</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Service Item -->
-            <div data-aos="fade-up"
-            data-aos-duration="3000" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-4">UI/UX Design Services</h3>
-                <p class="text-gray-700">
-                    Crafting intuitive and engaging user interfaces that enhance user experience and foster customer loyalty.
-                </p>
-            </div>
-            <!-- Service Item -->
-            <div data-aos="fade-up"
-            data-aos-duration="3000" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-4">Custom Website Design</h3>
-                <p class="text-gray-700">
-                    Developing bespoke websites that reflect your brand identity and meet your specific business objectives.
-                </p>
-            </div>
-            <!-- Service Item -->
-            <div data-aos="fade-up"
-            data-aos-duration="3000" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-4">E-Commerce Solutions</h3>
-                <p class="text-gray-700">
-                    Building scalable and secure e-commerce platforms that drive sales and provide seamless shopping experiences.
-                </p>
-            </div>
-            <!-- Service Item -->
-            <div data-aos="fade-up"
-            data-aos-duration="3000" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-4">Website Maintenance and Support</h3>
-                <p class="text-gray-700">
-                    Offering comprehensive maintenance services to ensure your website remains up-to-date, secure, and performing optimally.
-                </p>
-            </div>
-            <!-- Service Item -->
-            <div data-aos="fade-up"
-            data-aos-duration="3000" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-4">Content Management Systems (CMS)</h3>
-                <p class="text-gray-700">
-                    Implementing user-friendly CMS platforms that allow for effortless content updates and management.
-                </p>
-            </div>
-            <!-- Service Item -->
-            <div data-aos="fade-up"
-            data-aos-duration="3000" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-4">API Integration</h3>
-                <p class="text-gray-700">
-                    Integrating third-party APIs to enhance functionality and streamline your business processes.
-                </p>
-            </div>
+     <!-- Blog1 -->
+     <div class="container mx-auto px-6 py-12 flex flex-col md:flex-row gap-8">
+        <!-- Left Side: Blog Content -->
+        <div class="w-full md:w-2/3 bg-gray-900 p-6 rounded-lg ">
+            <img src="https://plus.unsplash.com/premium_photo-1683121710572-7723bd2e235d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHRlY2hub2xvZ3l8ZW58MHwwfDB8fHww" alt="Blog Image" class="w-full h-72 object-cover rounded-lg">
+            <h1 class="text-4xl font-bold mt-6">The Future of Web Design</h1>
+            <p class="text-gray-400 text-sm mt-2">Published on: Feb 22, 2025</p>
             
+            <p class="text-lg  mt-4">
+                The web development landscape is constantly evolving, 
+                driven by new technologies, changing user expectations, and innovative design practices. 
+                As businesses and individuals increasingly rely on the internet, 
+                developers must stay ahead of emerging trends. The future of 
+                web development is shaped by advancements in artificial intelligence, 
+                machine learning, automation, and immersive experiences.
+            </p>
+
+            <h2 class="text-2xl font-semibold mt-6">AI and Automation in Web Development</h2>
+            <p class="text-lg  mt-2">
+                Artificial Intelligence (AI) is transforming web development in multiple ways.
+                 AI-powered tools are making it easier for developers to create sophisticated 
+                 applications with minimal effort. Website builders such as Wix and Shopify now 
+                 use AI to suggest design improvements and optimize user experiences.
+                 Machine Learning (ML) is also being integrated into web development, 
+                 enabling websites to personalize content based on user behavior. Chatbots, 
+                 AI-driven customer support, and automated testing tools are improving efficiency 
+                 and reducing manual efforts.
+            </p>
+
+            <h2 class="text-2xl font-semibold mt-6">Progressive Web Apps (PWAs) Will Dominate</h2>
+            <p class="text-lg  mt-2">
+                PWAs combine the best of web and mobile applications. 
+                They provide an app-like experience without requiring downloads from an app store. 
+                With features such as offline accessibility, push notifications, and fast loading speeds, 
+                PWAs are becoming a preferred choice for businesses. Major companies like Twitter, 
+                Starbucks, and Uber are already leveraging PWAs to enhance user engagement.
+            </p>
+
+            <h2 class="text-2xl font-semibold mt-6">Voice Search Optimization</h2>
+            <p class="text-lg  mt-2">
+                As smart assistants like Alexa, Siri, and Google Assistant become more popular, 
+                voice search optimization is essential. Websites need to adapt by using natural 
+                language processing (NLP) and conversational AI to improve their content 
+                for voice-based searches.
+            </p>
+
+            <h2 class="text-2xl font-semibold mt-6">The Rise of No-Code and Low-Code Development</h2>
+            <p class="text-lg  mt-2">
+                No-code and low-code platforms enable individuals with minimal coding knowledge 
+                to build websites and applications. These platforms use drag-and-drop interfaces 
+                and pre-built components, making web development more accessible. This trend will 
+                continue to grow, allowing businesses to create digital solutions faster without 
+                hiring large development teams.
+            </p>
+
+            <h2 class="text-2xl font-semibold mt-6">Conclusion</h2>
+            <p class="text-lg  mt-2">
+                The future of web development is driven by innovation, speed, and user experience. 
+                With AI, blockchain, 5G, and AR/VR shaping the industry, developers must continuously 
+                evolve their skills. Businesses that embrace these technologies will stay ahead in the
+                 digital landscape. Web development will continue to be an exciting and ever-changing field, 
+                 offering endless opportunities for growth and creativity.
+            </p>
+        </div>
+
+        <!-- Right Side: Recent Articles -->
+        <div class="w-full md:w-1/3">
+            <h3 class="text-2xl font-bold text-white mb-6">Recent Articles</h3>
+
+            <!-- Article 1 -->
+            <div class="bg-gray-900 rounded-lg  p-4 mb-4  items-start">
+                <img src="https://plus.unsplash.com/premium_photo-1663040543387-cb7c78c4f012?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHRlY2hub2xvZ3l8ZW58MHwwfDB8fHww" alt="Article Image" class=" h-36 object-cover rounded-md">
+                <div class="ml-4">
+                    <h4 class="text-lg font-semibold">Why UX Matters</h4>
+                    <p class="text-sm ">Discover why user experience is the key to high conversion rates and engagement...</p>
+                    <a href="blog2.html" class="text-blue-500 font-semibold">Read More</a>
+                </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="bg-gray-900 rounded-lg  p-4 mb-4  items-start">
+                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHRlY2hub2xvZ3l8ZW58MHwwfDB8fHww" alt="Article Image" class=" h-36 object-cover rounded-md">
+                <div class="ml-4">
+                    <h4 class="text-lg font-semibold">AI in Web Design</h4>
+                    <p class="text-sm ">Learn how artificial intelligence is changing the way websites are designed...</p>
+                    <a href="blog3.html" class="text-blue-500 font-semibold">Read More</a>
+                </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="bg-gray-900 rounded-lg  p-4  items-start">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHRlY2hub2xvZ3l8ZW58MHwwfDB8fHww" alt="Article Image" class=" h-36 object-cover rounded-md">
+                <div class="ml-4">
+                    <h4 class="text-lg font-semibold">SEO Best Practices</h4>
+                    <p class="text-sm ">Improve your website’s search ranking with these latest SEO strategies...</p>
+                    <a href="blog4.html" class="text-blue-500 font-semibold">Read More</a>
+                </div>
+            </div>
         </div>
     </div>
-</section>
 
-<!-- Approach Section -->
-<section class=" py-16">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center text-[#F16C27] mb-12">Our Approach</h2>
-
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Step 1 -->
-            <div class="bg-white p-6 shadow-lg rounded-lg text-center transform transition duration-300 hover:scale-105">
-                <div class="text-4xl text-blue-500 font-bold mb-3">1</div>
-                <h3 class="text-xl font-semibold text-gray-700 mb-2">Understanding Your Needs</h3>
-                <p class="text-gray-600">We start with in-depth discussions to grasp your business goals, target audience, and expectations.</p>
-            </div>
-
-            <!-- Step 2 -->
-            <div class="bg-white p-6 shadow-lg rounded-lg text-center transform transition duration-300 hover:scale-105">
-                <div class="text-4xl text-orange-500 font-bold mb-3">2</div>
-                <h3 class="text-xl font-semibold text-gray-700 mb-2">Crafting a Unique Solution</h3>
-                <p class="text-gray-600">Our team designs and develops custom solutions tailored to your needs with a user-friendly approach.</p>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="bg-white p-6 shadow-lg rounded-lg text-center transform transition duration-300 hover:scale-105">
-                <div class="text-4xl text-teal-500 font-bold mb-3">3</div>
-                <h3 class="text-xl font-semibold text-gray-700 mb-2">Testing & Optimization</h3>
-                <p class="text-gray-600">We rigorously test your website to ensure performance, security, and flawless functionality.</p>
-            </div>
-
-            <!-- Step 4 -->
-            <div class="bg-white p-6 shadow-lg rounded-lg text-center transform transition duration-300 hover:scale-105">
-                <div class="text-4xl text-red-500 font-bold mb-3">4</div>
-                <h3 class="text-xl font-semibold text-gray-700 mb-2">Deployment & Launch</h3>
-                <p class="text-gray-600">Once tested, we deploy your website on a reliable server for a seamless experience.</p>
-            </div>
-
-            <!-- Step 5 -->
-            <div class="bg-white p-6 shadow-lg rounded-lg text-center transform transition duration-300 hover:scale-105">
-                <div class="text-4xl text-purple-500 font-bold mb-3">5</div>
-                <h3 class="text-xl font-semibold text-gray-700 mb-2">Ongoing Support & Growth</h3>
-                <p class="text-gray-600">We provide continuous maintenance and support, ensuring your site evolves with your business.</p>
-            </div>
-        </div>
-    </div>
-</section>
+ 
             <!-- Contact Section -->
     <section id="contact" class="py-16 px-8 bg-[#949494] text-black text-center">
         <h2 class="text-4xl font-bold">Get in Touch</h2>
@@ -245,7 +231,7 @@
         <hr class="mt-3">
         <h2 class="mt-2">© 2025 ScalarCode Innovations | All Rights Reserved</h2>
     </section>
-    <script src="./aboutus.js" ></script>
+    <script src="./blog1.js" ></script>
     <script>
         AOS.init();
       </script>
