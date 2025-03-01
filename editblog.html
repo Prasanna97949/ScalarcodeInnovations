@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scalar Code Innovations</title>
+    <link rel="icon" type="image/x-icon"  href="./images/doc-logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+</head>
+<body class="bg-gray-900 text-white" >
+    <!-- Navbar ms -->
+    <nav class="hidden p-2 bg-[#949494] md:flex justify-between items-center shadow-xl z-20 sticky top-0">
+        <div class="flex justify-center items-center gap-2">
+            <img class="h-10 rounded-md " src="./images/logo.png" alt="logo">
+            <h1 class="text-2xl text-black font-bold"><span class="text-[#F16C27]" >SC</span>ALARCODE</h1>
+        </div>
+        <div>
+            <ul class="flex justify-center items-center pt-1 gap-8 ">
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./index.html">Home</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./aboutus.html">About Us</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./index.html#services">Services</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./ourproject.html">Our Projects</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./blog.html">Blogs</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./contactus.html">Contact Us</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./support.html">Support</a></li>
+            </ul>
+        </div>
+        <div></div>
+     </nav>
+     <!-- Navbar ss -->
+     <nav class="md:hidden p-2 bg-[#949494] flex justify-between shadow-xl z-20 sticky top-0">
+        <div class="flex justify-center items-center gap-2">
+            <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              
+        </div>
+        <div class="flex justify-center items-center gap-2">
+            <img class="h-10 rounded-md " src="./images/logo.png" alt="logo">
+            <h1 class="text-2xl text-black font-bold"><span class="text-[#F16C27]" >SC</span>ALARCODE</h1>
+        </div>
+        <div></div>
+     </nav>
+     <!-- side navbar -->
+     <Section id="sidenav" class="bg-[#949494] fixed z-20 top-0 transition-all duration-1000 " style="width: 50%; height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="inline text-black cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col items-center gap-8 text-gray-600">
+            <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./index.html">Home</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./aboutus.html">About Us</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./index.html#services">Services</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./ourproject.html">Our Project</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./blog.html">Blogs</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./contactus.html">Contact Us</a></li>
+                <li class="pt-1 border-b-2 border-black font-semibold text-black hover:border-white cursor-pointer"><a href="./support.html">Support</a></li>
+        </ul>
+     </Section>
+     <!-- Blogs -->
+      <!-- Blog Section -->
+    <section class="container mx-auto px-6 py-12">
+        <h2 class="text-4xl font-bold text-center text-white mb-10">Edit Blogs</h2>
+
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
+            <!-- Blog Card 1 -->
+            <div class="bg-[#36404C] rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <img src="./images/uiux.webp" alt="Blog Image" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <p class="text-gray-500 text-sm">Posted on: Feb 22, 2025</p>
+                    <h3 class="text-xl font-bold mt-2">The Future of Web Design</h3>
+                    <button class="mt-4 inline-block text-white bg-orange-500 px-4 py-2 rounded hover:bg-orange-600 transition" >Edit Blog</button>
+                    <button class="mt-4 inline-block text-white bg-orange-500 px-4 py-2 rounded hover:bg-orange-600 transition" >Delete</button>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="bg-[#36404C] rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <img src="./images/web app.webp" alt="Blog Image" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <p class="text-gray-500 text-sm">Posted on: Feb 20, 2025</p>
+                    <h3 class="text-xl font-bold mt-2">Why UX Matters More Than Ever</h3>
+                    <button class="mt-4 inline-block text-white bg-orange-500 px-4 py-2 rounded hover:bg-orange-600 transition" >Edit Blog</button>
+                    <button class="mt-4 inline-block text-white bg-orange-500 px-4 py-2 rounded hover:bg-orange-600 transition" >Delete</button>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="bg-[#36404C] rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <img src="./images/seo.webp" alt="Blog Image" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <p class="text-gray-500 text-sm">Posted on: Feb 18, 2025</p>
+                    <h3 class="text-xl font-bold mt-2">How AI is Changing Web Development</h3>
+                    <button class="mt-4 inline-block text-white bg-orange-500 px-4 py-2 rounded hover:bg-orange-600 transition" >Edit Blog</button>
+                    <button class="mt-4 inline-block text-white bg-orange-500 px-4 py-2 rounded hover:bg-orange-600 transition" >Delete</button>
+                </div>
+            </div>
+        </div>
+    </section>
+            <!-- Contact Section -->
+    <section id="contact" class="py-16 px-8 bg-[#949494] text-black text-center">
+        <h2 class="text-4xl font-bold">Get in Touch</h2>
+        <p class="mt-4">Let's bring your ideas to life. Reach out to us today!</p>
+        <a href="mailto:contact@scalarcode.com" class="mt-6 inline-block bg-[#F16C27] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0FB2E1] transition">Contact Us</a>
+    </section>
+    <hr>    
+     <!-- footer -->
+    <section id="contact" class="py-6 px-8 bg-[#949494] text-black text-center">
+        <div class=" flex justify-around items-center flex-wrap gap-10" >
+            <div class="flex flex-col justify-center items-center gap-4">
+                <img class="h-28 w-28 "  src="./images/doc-logo.png" alt="logo">
+                <h2>Code your Success with Us <br> Transforming Ideas into Reality</h2>
+            </div>
+            <!-- quick links -->
+            <div class="text-left">
+                <h2 class="font-bold">Quick Links</h2>
+                <h2 class="hover:text-white cursor-pointer">Home</h2>
+                <h2 class="hover:text-white cursor-pointer">About Us</h2>
+                <h2 class="hover:text-white cursor-pointer">Services</h2>
+                <h2 class="hover:text-white cursor-pointer">Our Projects</h2>
+                <h2 class="hover:text-white cursor-pointer">Blogs</h2>
+                <h2 class="hover:text-white cursor-pointer">Contact Us</h2>
+                <h2 class="hover:text-white cursor-pointer">Support</h2>
+            </div>
+            <!-- contact details -->
+            <div class="text-left">
+                <h2 class="font-bold">Contact Details</h2>
+                <div class="flex gap-2 items-center mt-1 " >
+                    <i class="fa-solid fa-phone fa-sm" style="color: #000000;"></i>
+                    <h2>+91 9095796142</h2>
+                </div>
+              <div class="flex gap-2 items-center mt-1 " >
+                  <i class="fa-solid fa-phone fa-sm" style="color: #000000;"></i>
+                  <h2>+91 9159088617</h2>
+              </div>
+              <div class="flex gap-2 items-center mt-1 " >
+                  <h2><i class="fa-solid fa-location-dot fa-sm" style="color: #000000;"></i> MIG-280, Tamil University,<br>Sindhamani,<br>Medical College Road,<br>Thanjavur-613 010.</h2>
+               </div>
+               <div class="flex gap-2 items-center mt-1 " >
+                <i class="fa-solid fa-envelope fa-sm" style="color: #000000;"></i>
+                   <h2>scalarcodeinnovations@gmail.com</h2>
+               </div>
+            </div>
+            <!-- follow us -->
+             <div class="flex flex-col gap-8">
+                <h2 class="font-bold">Follow Us On</h2>
+                <div class="flex gap-6">
+                    <i class="fa-brands fa-youtube fa-lg" style="color: #000205;"></i>
+                    <i class="fa-brands fa-instagram fa-lg" style="color: #1e3050;"></i>
+                    <i class="fa-brands fa-linkedin fa-lg" style="color: #000000;"></i>
+                    <i class="fa-brands fa-whatsapp fa-lg" style="color: #000000;"></i>
+                </div>
+             </div>
+        </div>
+        <hr class="mt-3">
+        <h2 class="mt-2">© 2025 ScalarCode Innovations | All Rights Reserved</h2>
+    </section>
+    <script src="./blog.js" ></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
