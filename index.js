@@ -25,3 +25,16 @@ document.querySelectorAll('.faq-toggle').forEach(button => {
         symbol.textContent = answer.classList.contains('hidden') ? '+' : '-';
     });
 });
+// see more
+function toggleFeatures(button) {
+    let card = button.closest("div");
+    let features = card.querySelector(".more-features");
+
+    if (features.classList.contains("hidden")) {
+        features.classList.remove("hidden");
+        button.innerText = "See Less";
+    } else {
+        features.classList.add("hidden");
+        button.innerText = "See More";
+    }
+}
